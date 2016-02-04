@@ -15,7 +15,7 @@ public class Main {
 
     public static void main(String[] args) {
         //int array[] = {1, 20, 4, 16, 7, 4, 8};
-	    // Сортировка пузырьком
+        // Сортировка пузырьком
         //task1(array);
         // Сортировка выбором (выборкой)
         //task2(array);
