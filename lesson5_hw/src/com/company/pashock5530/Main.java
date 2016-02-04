@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Пароль: " + pass);
         System.out.print("Безопасность: ");
         if (pass.length() >= 8) {
-            if ((pass.charAt(0) > 'A' && pass.charAt(0) < 'Z') && (pass.charAt(pass.length()-1) > '0' && pass.charAt(pass.length()-1) < '9')) {
+            if ((pass.charAt(0) >= 'A' && pass.charAt(0) <= 'Z') && (pass.charAt(pass.length()-1) >= '0' && pass.charAt(pass.length()-1) <= '9')) {
                 System.out.println("сложный");
             } else {
                 System.out.println("обычный");
