@@ -12,9 +12,9 @@ public class Main {
 
     public static void main(String[] args) {
         /* работа со строками */
-	    //task1();
+	    task1();
         /* практика */
-        task2();
+        //task2();
     }
 
     public static void task1() {
@@ -40,6 +40,7 @@ public class Main {
         char ch[] = str1.toCharArray();
         System.out.println(Arrays.toString(ch));
         System.out.println(str1.equalsIgnoreCase(str3));
+        System.out.println(str1.replace("g1", "123123"));
     }
 
     public static void task2() {
