@@ -9,32 +9,249 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.pashock.lesson8.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
-        android:textColor="#000000"
-        android:textSize="30px"
-        android:id="@+id/myTextView1" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:id="@+id/myButton1"
-        android:layout_marginBottom="58dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/myEditText1"
-        android:width="400px"
-        android:layout_above="@+id/myButton1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="40px"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:hint="введите"
+        android:enabled="false"
+        android:textAlignment="viewEnd"
+        android:inputType="none"
+        android:height="75dp"
+        android:minHeight="75dp"
+        android:maxHeight="75dp"
+        android:nestedScrollingEnabled="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="75dp" />
+        android:layout_below="@+id/myEditText1"
+        android:id="@+id/myLinearV1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/myLinearH1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:id="@+id/myButton7"
+                android:height="100dp"
+                android:textColor="#000000"
+                android:textSize="35dp"
+                android:width="75dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:id="@+id/myButton8"
+                android:width="75dp"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:height="100dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:id="@+id/myButton9"
+                android:height="100dp"
+                android:textColor="#000000"
+                android:textSize="35dp"
+                android:width="75dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:id="@+id/myButtonDivide"
+                android:height="100dp"
+                android:textColor="#000000"
+                android:textSize="35dp"
+                android:width="75dp"
+                android:onClick="onButtonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/myLinearH2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/myButton4"
+                android:width="75dp"
+                android:textColor="#000000"
+                android:height="100dp"
+                android:textSize="35dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:id="@+id/myButton5"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:height="100dp"
+                android:width="75dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:id="@+id/myButton6"
+                android:width="75dp"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:height="100dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:id="@+id/myButtonMulty"
+                android:width="75dp"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:height="100dp"
+                android:onClick="onButtonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/myLinearH3">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/myButton1"
+                android:textColor="#000000"
+                android:layout_below="@+id/myEditText1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:height="100dp"
+                android:width="75dp"
+                android:textSize="35dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/myButton2"
+                android:textColor="#000000"
+                android:width="75dp"
+                android:height="100dp"
+                android:textSize="35dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/myButton3"
+                android:height="100dp"
+                android:textColor="#000000"
+                android:width="75dp"
+                android:textSize="35dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/myButtonMinus"
+                android:width="75dp"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:height="100dp"
+                android:onClick="onButtonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/myLinearH4">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/myButton0"
+                android:width="75dp"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:height="100dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:id="@+id/myButtonDot"
+                android:height="100dp"
+                android:textColor="#000000"
+                android:textSize="35dp"
+                android:width="75dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:id="@+id/myButtonEqually"
+                android:width="75dp"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:height="100dp"
+                android:onClick="onButtonClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/myButtonPlus"
+                android:width="75dp"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                android:height="100dp"
+                android:onClick="onButtonClick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>
