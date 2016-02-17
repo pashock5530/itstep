@@ -12,28 +12,128 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_marginTop="43dp"
+        android:text="Сумма кредита, грн:"
+        android:id="@+id/textSum"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:textColor="#000000" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
-        android:width="300dp" />
+        android:id="@+id/fieldSum"
+        android:layout_below="@+id/textSum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textSum"
+        android:layout_alignEnd="@+id/textSum"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:numeric="decimal" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
+        android:text="factorial"
+        android:id="@+id/buttonFactorial"
+        android:onClick="onClick"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="45dp"
-        android:onClick="onClick" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ввести"
+        android:id="@+id/buttonSum"
+        android:layout_below="@+id/textPeriod"
+        android:layout_toRightOf="@+id/fieldPeriod"
+        android:layout_toEndOf="@+id/fieldPeriod"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:onClick="onSumClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Период, мес:"
+        android:id="@+id/textPeriod"
+        android:layout_below="@+id/fieldSum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fieldPeriod"
+        android:layout_below="@+id/textPeriod"
+        android:layout_alignRight="@+id/fieldSum"
+        android:layout_alignEnd="@+id/fieldSum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:numeric="integer"
+        android:textSize="25dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Платеж в мес:"
+        android:id="@+id/textMSum"
+        android:layout_below="@+id/buttonSum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Платеж 1"
+        android:id="@+id/textPeriodSum"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fieldPSum"
+        android:layout_below="@+id/textPeriodSum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:layout_alignRight="@+id/fieldPeriod"
+        android:layout_alignEnd="@+id/fieldPeriod"
+        android:numeric="decimal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ввести"
+        android:id="@+id/buttonPSum"
+        android:layout_alignTop="@+id/fieldPSum"
+        android:layout_toRightOf="@+id/fieldPSum"
+        android:layout_toEndOf="@+id/fieldPSum"
+        android:textSize="20dp"
+        android:onClick="onPSumClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Состояние:"
+        android:id="@+id/textStatus"
+        android:layout_below="@+id/buttonPSum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:textColor="#000000" />
 </RelativeLayout>
