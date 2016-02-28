@@ -6,7 +6,6 @@ package com.example.pashock.lesson11;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -34,8 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick1(View view) {
-        People people = new People();
-        people.setName(userName.getText().toString());
+        People people = new People(userName.getText().toString(), 20);
         peoples[i++] = people;
 
         if (i+1 > col) {
@@ -66,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         text.setText("");
         for (People j:peoples) {
             if (j != null) {
-                text.append(j.getName()+" ");
+                text.append(j.getName()+"\n");
             } else {
                 break;
             }

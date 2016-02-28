@@ -6,19 +6,36 @@ package com.example.pashock.lesson11;
 public class People {
 
     private String name;
+    private int age;
+    private Contact[] contacts;
+
+    public People(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String Name) {
-        name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int Age;
+    public int getAge() {
+        return age;
+    }
 
-    public void Move() {
+    public void setAge(int age) {
+        this.age = age;
+    }
 
+    public Contact[] getContacts() {
+        return contacts;
+    }
+
+    public void addContact(String name, int age) {
+        this.contacts[0] = new Contact(name, age);
     }
 
 }
