@@ -9,9 +9,16 @@ public class People {
     private int age;
     private Contact[] contacts;
 
+    public People() {
+        name = "";
+        age = -1;
+        contacts = new Contact[0];
+    }
+
     public People(String name, int age) {
         this.name = name;
         this.age = age;
+        this.contacts = new Contact[0];
     }
 
     public String getName() {
