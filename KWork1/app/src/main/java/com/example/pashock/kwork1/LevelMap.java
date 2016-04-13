@@ -10,8 +10,8 @@ public class LevelMap implements ILevelMap {
     private HashMap<Integer, Level> map = new HashMap<>();
 
     public LevelMap() {
-        map.put(1, new Level(1, 5, 1,"mouse", "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpeg"));
-        map.put(2, new Level(2, 10, 2, "word", "img1", "img2", "img3", "img4"));
+        map.put(1, new Level(1, 5, 1, "mouse", "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpeg"));
+        map.put(2, new Level(2, 10, 2, "nokia", "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"));
     }
 
     @Override
