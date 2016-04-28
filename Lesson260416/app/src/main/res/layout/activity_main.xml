@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pashock.lesson260416.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bal"
+        android:layout_gravity="center"
+        android:textSize="140sp"
+        android:textColor="#36000000" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/poligonBlock"
+            android:layout_weight="0.9">
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn1"
+                android:layout_weight="0.1"
+                android:onClick="onClick"
+                android:text="0"
+                android:textColor="#00ffffff" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn2"
+                android:layout_weight="0.1"
+                android:onClick="onClick"
+                android:text="1"
+                android:textColor="#00ffffff" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn3"
+                android:layout_weight="0.1"
+                android:onClick="onClick"
+                android:text="2"
+                android:textColor="#00ffffff" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn4"
+                android:layout_weight="0.1"
+                android:onClick="onClick"
+                android:text="3"
+                android:textColor="#00ffffff" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn5"
+                android:layout_weight="0.1"
+                android:onClick="onClick"
+                android:text="4"
+                android:textColor="#00ffffff" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn6"
+                android:layout_weight="0.1"
+                android:onClick="onClick"
+                android:text="5"
+                android:textColor="#00ffffff" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn7"
+                android:layout_weight="0.1"
+                android:onClick="onClick"
+                android:text="6"
+                android:textColor="#00ffffff" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn8"
+                android:layout_weight="0.1"
+                android:onClick="onClick"
+                android:text="7"
+                android:textColor="#00ffffff" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn9"
+                android:layout_weight="0.1"
+                android:onClick="onClick"
+                android:text="8"
+                android:textColor="#00ffffff" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn10"
+                android:layout_weight="0.1"
+                android:onClick="onClick"
+                android:text="9"
+                android:textColor="#00ffffff" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/pausePoligon"
+            android:layout_weight="0.1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пауза"
+                android:id="@+id/pauseBtn"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onPauseClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a5a5a5"
+        android:id="@+id/startPoligon">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Старт"
+            android:id="@+id/startBtn"
+            android:layout_gravity="center"
+            android:onClick="onStartClick" />
+    </FrameLayout>
+</FrameLayout>
